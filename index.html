@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daniel Jr</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <button class="cabecalho_menu" aria-label="Menu"><i></i></button>
+            <h1 class="nav_titulo">Daniel</h1>
+            <div class="menu-lateral">
+                <ul class="lista">
+                    <li class="lista_item"  onClick="document.getElementById('apresentacao').scrollIntoView();">home</li>
+                    <li class="lista_item"  onClick="document.getElementById('sobremim').scrollIntoView();">sobre mim</li>
+                    <li class="lista_item"  onClick="document.getElementById('habilidades').scrollIntoView();">habilidades</li>
+                    <li class="lista_item"  onClick="document.getElementById('diferenciais').scrollIntoView();">diferenciais</li>
+                    <li class="lista_item"  onClick="document.getElementById('projetos').scrollIntoView();">projetos</li>
+                </ul>
+            </div>
+            
+    </header>
+
+    <section class="apresentacao" id="apresentacao">
+        <div class="container">
+            <img src="img/foto_gradiente.png" alt="" class="imagem">
+
+            <h2 class="titulo">
+                Daniel Jr.
+                <br>
+                Desenvolvedor FullStack.
+            </h2>
+
+            <ul class="redes">
+                <li class="redes_item">
+                    <a href="#" class="link_rede"><img src="img/instagram.png" alt="" class="instagram"></a>
+                </li>
+
+                <li class="redes_item">
+                    <a href="#" class="link_rede"><img src="img/github-logo_icon-icons.com_73546.png" alt="" class="github"></a>
+                </li>
+
+                <li class="redes_item">
+                    <a href="#" class="link_rede"><img src="img/linkedin_icon-icons.com_65929.png" alt="" class="linkedin"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sobre_mim" id="sobremim">
+        <!-- <h2 class="titulo_sobre">Sobre mim</h2> shift alt a-->
+
+        <div class="texto_sobre">
+            <img src="img/DanDan.jpg" alt="Minha imagem" class="imagem_sobre">
+            <h2 class="nome_Daniel">Daniel Jr</h2>
+            <h3 class="nome">Desenvolvedor fullStack.</h3>
+            <h4 class="texto_completo">
+                Minha história com a programação começou na Etec de Guarulhos, onde tive contato com a programação pela primeira vez.
+                <br> 
+                Em projetos sempre ficava responsável pelo Back-end, o que me fez aprender muito sobre PHP, MySql, Funções, Cursores, etc.
+                <br>
+                Recentemente fiz minha inscrição na Alura e desenvolvi ainda mais meu lado criativo para o Front-End. (Você pode encontrar meus certificados no meu perfil do LinkedIn).
+                <br>
+                Agora curso Análise e Desenvolvimento de Sistemas na Fatec de Guarulhos.
+            </h4>
+        </div>
+        
+    </section>
+
+
+    <section class="habilidades" id="habilidades">
+        <div class="decoracao"></div>
+        <div class="container_habilidades">
+            <h2 class="titulo_habilidades">Habilidades</h2>
+            <ul class="card">
+                <li class="item_card">css</li>
+                <li class="item_card">html</li>
+                <li class="item_card">javascript</li>
+            </ul>
+
+            <ul class="card">
+                <li class="item_card">PHP</li>
+                <li class="item_card">MySql</li>
+                <li class="item_card">Oracle</li>
+            </ul>
+
+            <ul class="card">
+                <li class="item_card">scrum</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="diferenciais" id="diferenciais">
+        <div class="container_diferenciais">
+            <h2 class="titulo_diferenciais">Diferenciais</h2>
+            
+            <ul class="card ensino">
+                <li class="item_card item_diferenciais">Ensino Técnico Etec</li>
+            </ul>
+
+            <ul class="card feceg_diferenciais">
+                <li class="item_card">
+                    FECEG
+                </li>
+                <li class="item_card">
+                    (Feira de Engenharia e Ciências de Guarulhos)
+                </li>
+                <li class="item_card">
+                    AutoSystem - 3º Lugar - 2022
+                </li>
+            </ul>
+
+            <ul class="card">
+                <li class="item_card item_diferenciais">Ensino Superior FATEC</li>
+            </ul>
+
+            <ul class="card ingles_diferenciais">
+                <li class="item_card item_diferenciais">Inglês Intermediário Cultura Inglesa</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="projetos" id="projetos">
+
+        <h2 class="titulo_projetos">Projetos</h2>
+    
+        <div class="container_projetos">
+            <div class="card_projeto">
+                <img src="img/Rectangle 14.png" alt="" class="img_projeto">
+                <div class="conteudo_projeto">
+                    <h3 class="titulo_projeto">Projeto rede social - Flex e Grid</h3>
+                    <p class="descricao_projeto">Projeto realizado durante o curso de Flex-Grid da Alura.</p>
+                    <a href="https://github.com/DanJu098/Rede-Social--Flex-Grid.git"><img src="img/github-logo_icon-icons.com_73546.png" alt="Logo github" class="github_projeto"></a>
+                </div>
+            </div>
+            
+            <div class="card_projeto">
+                <img src="img/Rectangle 15.png" alt="" class="img_projeto">
+                <div class="conteudo_projeto">
+                <h3 class="titulo_projeto">Projeto AluraBooks</h3>
+                <p class="descricao_projeto">Projeto realizado durante o curso de Mobile-First.</p>
+                <a href="https://github.com/DanJu098/alurabook.git"><img src="img/github-logo_icon-icons.com_73546.png" alt="Logo github" class="github_projeto"></a>
+                </div>
+            </div>  
+                
+            <div class="card_projeto">
+                <img src="img/Rectangle 16.png" alt="" class="img_projeto">
+                <div class="conteudo_projeto">
+                <h3 class="titulo_projeto">Projeto Alura-Midi</h3>
+                <p class="descricao_projeto">Projeto realizado durante o curso de JavaScript.</p>
+                <a href="https://github.com/DanJu098/AluraMidi.git"><img src="img/github-logo_icon-icons.com_73546.png" alt="Logo github" class="github_projeto"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/javascript/index.js"></script>
+</body>
+</html>

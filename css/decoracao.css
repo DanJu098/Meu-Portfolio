@@ -1,0 +1,23 @@
+.decoracao{
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 110px;
+    width: 50vw;
+    height: 600px;
+    background-color: var(--cinza);
+}
+
+@media screen and (max-width:1029px){
+    .decoracao{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .decoracao{
+        width: 100vw;
+        top: 30px;
+        height: 450px;
+    }
+}

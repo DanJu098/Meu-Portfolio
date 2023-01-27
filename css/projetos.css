@@ -1,0 +1,76 @@
+.projetos{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 8em;
+    align-items: center;
+}
+
+.titulo_projetos{
+    font-size: 35px;
+    width: 225px;
+    text-align: center;
+    justify-self: center;
+    margin: 4em 0px;
+    border-bottom: 3px solid var(--vermelho);
+}
+
+.container_projetos{
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+    justify-content: center;
+    text-align: center;
+}
+.card_projeto{
+    display: grid;
+    width: 350px;
+    transition: 1s;
+    font-size: 15px;
+    justify-content: center;
+    color:var(--preto-principal);
+}
+
+.card_projeto:hover{
+    background-color: var(--azul);
+    border-bottom-left-radius:5%;
+    border-bottom-right-radius: 5%;
+    top: 200px;
+    padding-bottom: 10px;
+    scale: 1.1;
+    cursor: pointer;
+}
+.titulo_projeto{
+    grid-column: 1;
+}
+
+.descricao_projeto{
+    grid-column: 1;
+}
+.img_projeto{
+    width: 350px;
+    height: auto;
+    opacity: 3;
+    transition: 1s;
+}
+
+.github_projeto{
+    width: 35px;
+    grid-column: 2;
+}
+.conteudo_projeto{
+    display: none;
+}
+
+.card_projeto:hover > .conteudo_projeto{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px 10px 0 8px;
+    scale: 1;
+}
+
+@media screen and (max-width:450px){
+    .img_projeto{
+        width: 300px;
+    }
+}

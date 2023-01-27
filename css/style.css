@@ -1,0 +1,29 @@
+@import url("/css/navbar.css");
+@import url("/css/apresentacao.css");
+@import url("/css/sobre.css");
+@import url("/css/habilidades.css");
+@import url("/css/diferenciais.css");
+@import url("/css/projetos.css");
+@import url("/css/decoracao.css");
+
+:root{
+    --preto-principal:#303030;
+    --azul:#EAFDFC;
+    --cinza:#414141;
+    --vermelho:#CA3E47;
+    --fonte-principal: "Raleway";
+}
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--preto-principal);
+    color: var(--azul);
+    font-weight: 300;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    scale: 1.1;
+    cursor: pointer;
+}

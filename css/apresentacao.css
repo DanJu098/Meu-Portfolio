@@ -1,0 +1,70 @@
+.apresentacao{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.container{
+    width: 85%;
+    background-color: var(--cinza);
+    text-align: center;
+    margin: 60px 0px;
+    padding: 4em 0px;
+    box-shadow: 5px 7px 1px rgba(202, 62, 71, 0.3);
+}
+
+
+
+.titulo{
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.redes_item{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 0px 50px;
+    margin-top: 40px;
+    transition: 1s;
+}
+
+.instagram{
+    width: 95%;
+}
+.github{
+    width: 100%;
+}
+.linkedin{
+    width: 100%;
+}
+
+.redes_item:not(:hover){
+    opacity: 0.9;
+}
+.redes_item:hover{
+    scale: 1.2;
+}
+@media screen and (max-width:1029px){
+    .container{
+        width: 863px;
+    }
+}
+@media screen and (max-width:450px){
+    .container{
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .titulo{
+        font-size: 20px;
+    }
+
+    .redes_item{
+        width: 45px;
+        height: 45px;
+        padding: 0px 20px;
+    }
+
+}

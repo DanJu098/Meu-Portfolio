@@ -1,0 +1,123 @@
+.sobre_mim{
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr auto;
+    padding: 3em 0px;
+    align-items: center;
+    background-color: var(--vermelho);
+}
+
+.nome_Daniel{
+    font-size: 40px;
+    margin: 0;
+    padding: 0 0 0.5em 0;
+}
+.titulo_sobre{
+    font-weight: 400;
+    font-size: 30px;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    margin-bottom: 4em;
+}
+
+.imagem_sobre{
+    width: 280px;
+    height: auto;
+    margin: 0px 100px 0px 50px;
+    border-right: 4px solid var(--cinza);
+    border-radius: 10px;
+    float: left;
+}
+
+
+
+.texto_sobre{
+    padding: 0px 150px;
+}
+
+
+.nome{
+    grid-column: 2;
+    grid-row: 2;
+    font-weight: 300;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.texto_completo{
+font-weight: 300;
+font-size: 20px;
+line-height: 27px;
+}
+
+
+@media screen and (max-width:1029px){
+    .imagem_sobre{
+        width: 200px;
+        height: auto;
+        margin: 0px 20px 0 50px;
+    }
+    .nome{
+        padding-left: 100px;
+    }
+    .texto_sobre{
+        padding: 0px;
+        width: 90%;
+    }
+    .texto_completo{
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .nome{
+        text-align: left;
+    }
+    .texto_completo{
+        text-align: left;
+        font-size: 15px;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .texto_sobre{
+        padding: 0px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:450px){
+    .sobre_mim{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .titulo_sobre{
+        font-size: 20px;
+    }
+
+    .imagem_sobre{
+        display: none;
+        padding: 0px;
+    }
+
+    .texto_sobre{
+        padding: 0px;
+    }
+    .texto_completo{
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .sobre_mim{
+        grid-template-columns: 1;
+    }
+    .nome{
+        padding: 0;
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: 1em;
+    }
+}
